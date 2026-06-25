@@ -1,0 +1,23 @@
+# Server JARs (download at runtime)
+paper.jar
+plugins/Geyser-Spigot.jar
+plugins/Floodgate-Spigot.jar
+
+# Generated world data
+world/
+world_nether/
+world_the_end/
+
+# Cache and logs
+cache/
+logs/
+crash-reports/
+
+# Geyser runtime data
+plugins/Geyser-Spigot/
+plugins/floodgate/
+
+# Misc
+*.pid
+server.pid
+debug.log
