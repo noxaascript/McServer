@@ -1,0 +1,58 @@
+## Geyser Configuration
+## Documentation: https://wiki.geysermc.org/geyser/understanding-the-config/
+
+bedrock:
+  # Bedrock clients connect on this port (UDP)
+  port: 19132
+  # Bind to all interfaces
+  address: 0.0.0.0
+  # Broadcast the server in the Bedrock LAN tab
+  broadcast-port: 19132
+  # Enable MOTD/ping passthrough from Java server
+  enable-proxy-connections: false
+  # Maximum MOTD length for Bedrock
+  motd1: "Paper + Geyser"
+  motd2: "Java & Bedrock"
+  # Server name shown in Bedrock server list
+  server-name: "Paper + Geyser"
+  # Compression level (-1 to disable, 0-9)
+  compression-level: 6
+  # Enable PROXY protocol (only if behind a compatible proxy)
+  enable-proxy-protocol: false
+
+remote:
+  # The Java server address Geyser connects to
+  # "auto" uses the server's own address (recommended for plugin mode)
+  address: auto
+  port: 25565
+  # "auto" uses online-mode from server.properties
+  auth-type: floodgate
+
+# Floodgate handles Bedrock authentication
+floodgate-key-file: key.pem
+
+# Performance
+cache-images: 0
+allow-third-party-capes: true
+allow-third-party-ears: false
+show-cooldown: title
+show-coordinates: true
+disable-bedrock-scaffolding: false
+emote-offhand-workaround: "disabled"
+
+# Debug / logging
+debug-mode: false
+
+# Metrics (opt-in to help the Geyser team)
+metrics:
+  enabled: true
+  uuid: generateduuid
+
+# Advanced
+scoreboard-packet-threshold: 20
+enable-player-movement: true
+teleport-threshold: 8
+use-adapters: true
+
+# Command prefix for Geyser console commands
+command-cooldown: 500
