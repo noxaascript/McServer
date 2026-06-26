@@ -7,6 +7,7 @@ cd "$SERVER_DIR"
 PAPER_VERSION="${PAPER_VERSION:-1.21.1}"
 PAPER_BUILD="${PAPER_BUILD:-latest}"
 MEMORY="${MEMORY:-2G}"
+MAX_MEMORY="${MAX_MEMORY:-12G}"
 JAR="paper.jar"
 
 echo "=== Paper + Geyser Minecraft Server ==="
